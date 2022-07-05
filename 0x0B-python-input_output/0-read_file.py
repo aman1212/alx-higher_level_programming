@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-"""
-Definition of module
-"""
+"""read file"""
 
 def read_file(filename=""):
     """open and read a file
