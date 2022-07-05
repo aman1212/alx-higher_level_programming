@@ -1,18 +1,9 @@
 #!/usr/bin/python3
-"""
-Definition of module
-"""
+"""load from json"""
+import json
+
 
 def load_from_json_file(filename):
-    """function that creates an Object from a JSON file
-    Args
-      filename - file where the json string located
-    """
-    import json
-    with open(filename, encoding="utf-8") as f:
-        jsonString = f.read()
-        return json.loads(jsonString)
-    
-    
-        
-
+    """load from json"""
+    with open(filename, encoding="utf-8") as fd:
+        return json.load(fd)
