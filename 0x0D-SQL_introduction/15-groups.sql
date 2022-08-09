@@ -1,5 +1,6 @@
--- counts number of occurences of a particular score grouped by the score
-SELECT score, COUNT(*) AS number
-FROM second_table
-GROUP BY score
-ORDER BY number DES
+-- Lists the number of records with the same score in the table second_table.
+-- Records are ordered by descending count.
+SELECT `score`, COUNT(*) AS `number`
+FROM `second_table`
+GROUP BY `score`
+ORDER BY `number` DESC;
